@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/dialog_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/popup_socialEd_phoneEd"
+            android:layout_width="250dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittextcorner_blue"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Phone"
+            android:inputType="textPersonName"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView25" />
+
+
+        <EditText
+            android:id="@+id/popup_socialEd_instagramEd"
+            android:layout_width="250dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextcorner_blue"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="instagram"
+            android:inputType="textPersonName"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/popup_socialEd_facebookEd" />
+
+        <EditText
+            android:id="@+id/popup_socialEd_twitterEd"
+            android:layout_width="250dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextcorner_blue"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="twiiter"
+            android:inputType="textPersonName"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/popup_socialEd_instagramEd" />
+
+        <EditText
+            android:id="@+id/popup_socialEd_linkedinEd"
+            android:layout_width="250dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextcorner_blue"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="linkedin"
+            android:inputType="textPersonName"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/popup_socialEd_twitterEd" />
+
+        <EditText
+            android:id="@+id/popup_socialEd_facebookEd"
+            android:layout_width="250dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittextcorner_blue"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="facebook"
+            android:inputType="textPersonName"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/popup_socialEd_phoneEd" />
+
+        <EditText
+            android:id="@+id/popup_socialEd_snapchatEd"
+            android:layout_width="250dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextcorner_blue"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="snapchat"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/popup_socialEd_linkedinEd" />
+
+        <EditText
+            android:id="@+id/popup_socialEd_emailEd"
+            android:layout_width="250dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextcorner_blue"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="email"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/popup_socialEd_snapchatEd" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:alpha=".6"
+            android:background="@drawable/dialog_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/socialnetworking" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+
+
+        <Button
+            android:id="@+id/popup_socialEd_saveBt"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:background="@drawable/curvebutton"
+            android:text="Save"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

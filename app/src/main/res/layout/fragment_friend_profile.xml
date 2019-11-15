@@ -1,0 +1,156 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragments.FriendProfile"
+    android:background="#000">
+
+<!--
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/frndProf_nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="8dp"
+            android:text="Umer Khan"
+            android:textColor="#40b9ca"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frndProf_imgIV" />
+
+        <TextView
+            android:id="@+id/frndProf_desTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:text="HRM at Ingrum"
+            android:textColor="#40b9ca"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frndProf_nameTv" />
+
+        <ImageView
+            android:id="@+id/frndProf_twitterIV"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/twitterwhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/frndProf_linkedinIV"
+            app:layout_constraintTop_toTopOf="@+id/frndProf_instagramIV" />
+
+        <ImageView
+            android:id="@+id/frndProf_linkedinIV"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/linkedin"
+            app:layout_constraintEnd_toStartOf="@id/frndProf_twitterIV"
+            app:layout_constraintStart_toEndOf="@+id/frndProf_snapchatIV"
+            app:layout_constraintTop_toTopOf="@+id/frndProf_instagramIV" />
+
+
+        <ImageView
+            android:id="@+id/frndProf_snapchatIV"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/snapchatwhite"
+            app:layout_constraintEnd_toStartOf="@id/frndProf_linkedinIV"
+            app:layout_constraintStart_toEndOf="@+id/frndProf_instagramIV"
+            app:layout_constraintTop_toTopOf="@+id/frndProf_instagramIV" />
+
+        <ImageView
+            android:id="@+id/frndProf_instagramIV"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/instagramwhite"
+            app:layout_constraintEnd_toStartOf="@id/frndProf_snapchatIV"
+            app:layout_constraintStart_toEndOf="@+id/frndProf_facebookIV"
+            app:layout_constraintTop_toBottomOf="@+id/frndProf_desTv" />
+
+        <ImageView
+            android:id="@+id/frndProf_facebookIV"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/facebook"
+            app:layout_constraintEnd_toStartOf="@id/frndProf_instagramIV"
+            app:layout_constraintStart_toEndOf="@+id/frndProf_phoneIV"
+            app:layout_constraintTop_toTopOf="@+id/frndProf_instagramIV" />
+
+        <ImageView
+            android:id="@+id/frndProf_phoneIV"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/dialer"
+            app:layout_constraintEnd_toStartOf="@id/frndProf_facebookIV"
+            app:layout_constraintStart_toEndOf="@+id/frndProf_emailIV"
+            app:layout_constraintTop_toTopOf="@+id/frndProf_instagramIV" />
+
+        <ImageView
+            android:id="@+id/frndProf_emailIV"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/emailwhite"
+            app:layout_constraintEnd_toStartOf="@id/frndProf_phoneIV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/frndProf_instagramIV" />
+
+        <ImageView
+            android:id="@+id/frndProf_imgIV"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:foreground="@drawable/login_gradient"
+            android:scaleType="centerCrop"
+            android:src="@drawable/friendprofilepic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frndProf_backIV" />
+
+        <Button
+            android:id="@+id/frndProf_msgBt"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edittextcorner"
+            android:text="Message"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frndProf_instagramIV" />
+
+        <ImageView
+            android:id="@+id/frndProf_backIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/backarrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/frndProf_unfriendIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/unfriend"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+-->
+</FrameLayout>

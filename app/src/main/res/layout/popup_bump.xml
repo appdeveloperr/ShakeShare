@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+ <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bump_popup_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+     <ImageView
+         android:id="@+id/popBump_twitterIV"
+         android:layout_width="30dp"
+         android:layout_height="30dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toStartOf="@+id/popBump_linkedinIV"
+         app:layout_constraintStart_toEndOf="@+id/popBump_instagramIV"
+         app:layout_constraintTop_toTopOf="@+id/guideline19"
+         app:srcCompat="@drawable/twitterwhite" />
+
+     <ImageView
+         android:id="@+id/popBump_linkedinIV"
+         android:layout_width="30dp"
+         android:layout_height="30dp"
+         app:layout_constraintBottom_toBottomOf="@+id/popBump_twitterIV"
+         app:layout_constraintEnd_toStartOf="@+id/popBump_snapchatIV"
+         app:layout_constraintStart_toEndOf="@+id/popBump_twitterIV"
+         app:layout_constraintTop_toTopOf="@+id/popBump_twitterIV"
+         app:srcCompat="@drawable/linkedinwhite" />
+
+     <ImageView
+         android:id="@+id/popBump_facebookIV"
+         android:layout_width="30dp"
+         android:layout_height="30dp"
+         app:layout_constraintBottom_toBottomOf="@+id/popBump_twitterIV"
+         app:layout_constraintEnd_toStartOf="@+id/popBump_instagramIV"
+         app:layout_constraintStart_toEndOf="@+id/popBump_phoneIV"
+         app:layout_constraintTop_toTopOf="@+id/popBump_twitterIV"
+         app:srcCompat="@drawable/facebookwhite" />
+
+     <ImageView
+         android:id="@+id/popBump_instagramIV"
+         android:layout_width="30dp"
+         android:layout_height="30dp"
+         app:layout_constraintBottom_toBottomOf="@+id/popBump_twitterIV"
+         app:layout_constraintEnd_toStartOf="@+id/popBump_twitterIV"
+         app:layout_constraintStart_toEndOf="@+id/popBump_facebookIV"
+         app:layout_constraintTop_toTopOf="@+id/popBump_twitterIV"
+         app:srcCompat="@drawable/instagramwhite" />
+
+     <ImageView
+         android:id="@+id/popBump_snapchatIV"
+         android:layout_width="30dp"
+         android:layout_height="30dp"
+         app:layout_constraintBottom_toBottomOf="@+id/popBump_twitterIV"
+         app:layout_constraintEnd_toStartOf="@+id/popBump_emailIV"
+         app:layout_constraintStart_toEndOf="@+id/popBump_linkedinIV"
+         app:layout_constraintTop_toTopOf="@+id/popBump_twitterIV"
+         app:srcCompat="@drawable/snapchatwhite" />
+
+     <ImageView
+         android:id="@+id/popBump_emailIV"
+         android:layout_width="30dp"
+         android:layout_height="30dp"
+         app:layout_constraintBottom_toBottomOf="@+id/popBump_twitterIV"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toEndOf="@+id/popBump_snapchatIV"
+         app:layout_constraintTop_toTopOf="@+id/popBump_twitterIV"
+         app:srcCompat="@drawable/emailwhite" />
+
+     <ImageView
+         android:id="@+id/popBump_phoneIV"
+         android:layout_width="30dp"
+         android:layout_height="30dp"
+         app:layout_constraintBottom_toBottomOf="@+id/popBump_twitterIV"
+         app:layout_constraintEnd_toStartOf="@+id/popBump_facebookIV"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="@+id/popBump_twitterIV"
+         app:srcCompat="@drawable/dialerwhite" />
+
+     <ImageView
+         android:id="@+id/popBump_mainImgIV"
+         android:layout_width="0dp"
+         android:layout_height="0dp"
+         android:scaleType="centerCrop"
+         android:foreground="@drawable/login_gradient"
+         app:layout_constraintBottom_toTopOf="@+id/guideline19"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="@+id/guideline18"
+         app:srcCompat="@drawable/friendprofilepic" />
+
+        <ImageView
+            android:id="@+id/popBump_crossIV"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cross" />
+
+     <TextView
+         android:id="@+id/popBump_usernameTv"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Usman sh"
+         android:textColor="#fff"
+         android:textSize="15sp"
+         app:layout_constraintBottom_toTopOf="@+id/popBump_mainImgIV"
+         app:layout_constraintEnd_toEndOf="@+id/popBump_crossIV"
+         app:layout_constraintHorizontal_bias="0.524"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+
+     <android.support.constraint.Guideline
+         android:id="@+id/guideline18"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         app:layout_constraintGuide_percent="0.2"/>
+
+     <android.support.constraint.Guideline
+         android:id="@+id/guideline19"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         app:layout_constraintGuide_percent="0.8"/>
+
+ </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+        tools:layout_editor_absoluteX="40dp">
+
+        <Button
+            android:id="@+id/popBump_connectBt"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:background="@drawable/curvebutton"
+            android:text="Connect"
+            android:textColor="#fff"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

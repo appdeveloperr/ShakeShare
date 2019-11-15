@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/popup_frndSocial_mainCL"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dialog_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/popup_frndSocial_urlTv"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/edittextcorner_blue"
+            android:ems="10"
+            android:fontFamily="@font/nunito_light"
+            android:gravity="center"
+            android:hint="Friend social media url"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/popup_frndSocial_instagramIV" />
+
+
+        <ImageView
+            android:id="@+id/popup_frndSocial_twitterIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/popup_frndSocial_linkedinIV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/popup_frndSocial_instagramIV"
+            app:srcCompat="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/popup_frndSocial_linkedinIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/popup_frndSocial_facebookIV"
+            app:layout_constraintStart_toEndOf="@+id/popup_frndSocial_twitterIV"
+            app:layout_constraintTop_toTopOf="@+id/popup_frndSocial_instagramIV"
+            app:srcCompat="@drawable/linkedin" />
+
+        <ImageView
+            android:id="@+id/popup_frndSocial_facebookIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/popup_frndSocial_instagramIV"
+            app:layout_constraintStart_toEndOf="@+id/popup_frndSocial_linkedinIV"
+            app:layout_constraintTop_toTopOf="@+id/popup_frndSocial_instagramIV"
+            app:srcCompat="@drawable/facebook" />
+
+
+        <ImageView
+            android:id="@+id/popup_frndSocial_instagramIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toStartOf="@+id/popup_frndSocial_snapchatIV"
+            app:layout_constraintStart_toEndOf="@+id/popup_frndSocial_facebookIV"
+            app:layout_constraintTop_toBottomOf="@+id/popup_frndSocial_mainImgIV"
+            app:srcCompat="@drawable/instagram" />
+
+        <ImageView
+            android:id="@+id/popup_frndSocial_snapchatIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/popup_frndSocial_emailIV"
+            app:layout_constraintStart_toEndOf="@+id/popup_frndSocial_instagramIV"
+            app:layout_constraintTop_toTopOf="@+id/popup_frndSocial_instagramIV"
+            app:srcCompat="@drawable/snapchat" />
+
+        <ImageView
+            android:id="@+id/popup_frndSocial_emailIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/popup_frndSocial_phoneIV"
+            app:layout_constraintStart_toEndOf="@+id/popup_frndSocial_snapchatIV"
+            app:layout_constraintTop_toTopOf="@+id/popup_frndSocial_instagramIV"
+            app:srcCompat="@drawable/email" />
+
+        <ImageView
+            android:id="@+id/popup_frndSocial_phoneIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/popup_frndSocial_emailIV"
+            app:layout_constraintTop_toTopOf="@+id/popup_frndSocial_instagramIV"
+            app:srcCompat="@drawable/dialer" />
+
+        <ImageView
+            android:id="@+id/popup_frndSocial_mainImgIV"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/instagramclr" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+        <Button
+            android:id="@+id/popup_frndSocial_okBt"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:background="@drawable/curvebutton"
+            android:text="Open"
+            android:textColor="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

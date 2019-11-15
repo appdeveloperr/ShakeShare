@@ -1,0 +1,262 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragments.UserProfile"
+    android:background="#000">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!--<ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:alpha="0.5"
+            android:src="@drawable/userprofilepic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+-->
+        <com.jgabrielfreitas.core.BlurImageView
+            android:id="@+id/userpProf_blurIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:alpha="0.75"
+            android:src="@drawable/userprofilepic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/userpProf_nameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Jhanzaib Khan"
+                android:textColor="#40b9ca"
+                android:textSize="22dp"
+                android:fontFamily="@font/nunito_regular"
+                app:layout_constraintBottom_toTopOf="@+id/userpProf_designationTv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+            <TextView
+                android:id="@+id/userpProf_designationTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="CTO at Ingrum"
+                android:textColor="#40b9ca"
+                android:textSize="16sp"
+                android:fontFamily="@font/nunito_light"
+                app:layout_constraintBottom_toTopOf="@+id/userProf_instagramIV"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userpProf_nameTv" />
+
+            <ImageView
+                android:id="@+id/userpProf_phoneIV"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/dialerwhite"
+                app:layout_constraintBottom_toBottomOf="@+id/userProf_linkedinIV"
+                app:layout_constraintEnd_toStartOf="@+id/userpProf_facebookIV"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/userProf_linkedinIV" />
+
+            <ImageView
+                android:id="@+id/userProf_snapchatIV"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/snapchatwhite"
+                app:layout_constraintBottom_toBottomOf="@+id/userProf_linkedinIV"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/userProf_linkedinIV"
+                app:layout_constraintTop_toTopOf="@+id/userProf_linkedinIV" />
+
+            <ImageView
+                android:id="@+id/userProf_twitterIV"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="45dp"
+                android:src="@drawable/twitterwhite"
+                app:layout_constraintBottom_toBottomOf="@+id/userProf_instagramIV"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/userProf_instagramIV"
+                app:layout_constraintTop_toTopOf="@+id/userProf_instagramIV" />
+
+            <ImageView
+                android:id="@+id/userpProf_emailIV"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="45dp"
+                android:src="@drawable/emailwhite"
+                app:layout_constraintBottom_toBottomOf="@+id/userProf_instagramIV"
+                app:layout_constraintEnd_toStartOf="@+id/userProf_instagramIV"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/userProf_instagramIV" />
+
+            <ImageView
+                android:id="@+id/userpProf_facebookIV"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/facebookwhite"
+                app:layout_constraintBottom_toBottomOf="@+id/userProf_linkedinIV"
+                app:layout_constraintEnd_toStartOf="@+id/userProf_linkedinIV"
+                app:layout_constraintStart_toEndOf="@+id/userpProf_phoneIV"
+                app:layout_constraintTop_toTopOf="@+id/userProf_linkedinIV" />
+
+
+            <ImageView
+                android:id="@+id/userProf_linkedinIV"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/linkedinwhite"
+                app:layout_constraintBottom_toTopOf="@+id/guideline23"
+                app:layout_constraintEnd_toStartOf="@+id/userProf_snapchatIV"
+                app:layout_constraintStart_toEndOf="@+id/userpProf_facebookIV"
+                app:layout_constraintTop_toBottomOf="@+id/userProf_instagramIV" />
+
+            <ImageView
+                android:id="@+id/userProf_instagramIV"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/instagramwhite"
+                app:layout_constraintBottom_toTopOf="@+id/userProf_linkedinIV"
+                app:layout_constraintEnd_toStartOf="@+id/userProf_twitterIV"
+                app:layout_constraintStart_toEndOf="@+id/userpProf_emailIV"
+                app:layout_constraintTop_toBottomOf="@+id/userpProf_designationTv" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView18"
+                android:layout_width="225dp"
+                android:layout_height="225dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/userprofilepic"
+                app:layout_constraintBottom_toTopOf="@+id/userpProf_nameTv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline22" />
+
+            <ImageView
+                android:id="@+id/userpProf_logoutIV"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logout"
+                app:layout_constraintBottom_toTopOf="@+id/guideline21"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/userpProf_editIv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/editprofile"
+                app:layout_constraintBottom_toTopOf="@+id/guideline21"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:visibility="invisible"
+                android:layout_marginStart="50dp"
+                android:src="@drawable/publicwhite"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+                app:layout_constraintEnd_toStartOf="@+id/imageView21"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView21" />
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:visibility="invisible"
+                android:src="@drawable/privatewhite"
+                app:layout_constraintBottom_toTopOf="@+id/guideline23"
+                app:layout_constraintEnd_toStartOf="@+id/imageView22"
+                app:layout_constraintStart_toEndOf="@+id/imageView7" />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="50dp"
+                android:visibility="invisible"
+                android:src="@drawable/ghostwhite"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView21"
+                app:layout_constraintTop_toTopOf="@+id/imageView21" />
+
+            <ImageView
+                android:id="@+id/userpProf_socialEditIV"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/editsocial"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/guideline21"
+                app:layout_constraintEnd_toStartOf="@+id/userpProf_editIv"
+                app:layout_constraintStart_toEndOf="@+id/userpProf_logoutIV"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.0"/>
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.1"/>
+
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".1" />
+
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.7" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

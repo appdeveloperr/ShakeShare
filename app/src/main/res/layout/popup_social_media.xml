@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/popup_social_mainCL"
+    >
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dialog_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/popSocial_urlTv"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edittextcorner_blue"
+            android:ems="10"
+            android:textCursorDrawable="@null"
+            android:gravity="center"
+            android:fontFamily="@font/nunito_light"
+            android:hint="Your social media url"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/popSocial_linkedinIV" />
+
+
+        <ImageView
+            android:id="@+id/popSocial_twitterIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="45dp"
+            app:layout_constraintBottom_toBottomOf="@+id/popSocial_instagramIV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/popSocial_instagramIV"
+            app:layout_constraintTop_toTopOf="@+id/popSocial_instagramIV"
+            app:srcCompat="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/popSocial_linkedinIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/popSocial_snapchatIV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/popSocial_snapchatIV"
+            app:layout_constraintTop_toTopOf="@+id/popSocial_snapchatIV"
+            app:srcCompat="@drawable/linkedin" />
+
+        <ImageView
+            android:id="@+id/popSocial_facebookIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/popSocial_snapchatIV"
+            app:layout_constraintEnd_toStartOf="@+id/popSocial_snapchatIV"
+            app:layout_constraintStart_toEndOf="@+id/popSocial_phoneIV"
+            app:layout_constraintTop_toTopOf="@+id/popSocial_snapchatIV"
+            app:srcCompat="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/popSocial_instagramIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/popSocial_snapchatIV"
+            app:layout_constraintEnd_toStartOf="@+id/popSocial_twitterIV"
+            app:layout_constraintStart_toEndOf="@+id/popSocial_emailIV"
+            app:layout_constraintTop_toBottomOf="@+id/popupSoc_mainImgIV"
+            app:srcCompat="@drawable/instagram" />
+
+        <ImageView
+            android:id="@+id/popSocial_snapchatIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/popSocial_urlTv"
+            app:layout_constraintEnd_toStartOf="@+id/popSocial_linkedinIV"
+            app:layout_constraintStart_toEndOf="@+id/popSocial_facebookIV"
+            app:layout_constraintTop_toBottomOf="@+id/popSocial_instagramIV"
+            app:srcCompat="@drawable/snapchat" />
+
+        <ImageView
+            android:id="@+id/popSocial_emailIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="45dp"
+            app:layout_constraintBottom_toBottomOf="@+id/popSocial_instagramIV"
+            app:layout_constraintEnd_toStartOf="@+id/popSocial_instagramIV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/popSocial_instagramIV"
+            app:srcCompat="@drawable/email" />
+
+        <ImageView
+            android:id="@+id/popSocial_phoneIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/popSocial_snapchatIV"
+            app:layout_constraintEnd_toStartOf="@+id/popSocial_facebookIV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/popSocial_snapchatIV"
+            app:srcCompat="@drawable/dialer" />
+
+        <ImageView
+            android:id="@+id/popupSoc_mainImgIV"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/popSocial_instagramIV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/instagramclr" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+        <Button
+            android:id="@+id/popSocial_okBt"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:background="@drawable/curvebutton"
+            android:text="@string/cast_tracks_chooser_dialog_ok"
+            android:textColor="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
